@@ -293,9 +293,9 @@ window.upgrades = function(game) {
 			type: 'other',
 			title: 'Expand Reactor Rows',
 			description: 'Add one row to the reactor for each level of the upgrade.',
-			cost: 100,
+			cost: Math.pow(100, (game.rows + game.cols - 20)),
 			levels: 20,
-			multiplier: 100,
+			multiplier: 1,
 			onclick: function(upgrade) {
 				game.rows = game.base_rows + upgrade.level;
 			}
@@ -305,9 +305,9 @@ window.upgrades = function(game) {
 			type: 'other',
 			title: 'Expand Reactor Cols',
 			description: 'Add one column to the reactor for each level of the upgrade.',
-			cost: 100,
+			cost: Math.pow(100, (game.rows + game.cols - 20)),
 			levels: 20,
-			multiplier: 100,
+			multiplier: 1,
 			onclick: function(upgrade) {
 				game.cols = game.base_cols + upgrade.level;
 			}
