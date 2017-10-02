@@ -33,7 +33,7 @@ window.parts = function() {
 			pulse_multiplier: 1,
 			base_cost: 25,
 			base_ticks: 15,
-			base_power: 4,
+			base_power: 400,
 			base_heat: 8
 		},
 		{
@@ -47,7 +47,7 @@ window.parts = function() {
 			pulse_multiplier: 1,
 			base_cost: 60,
 			base_ticks: 15,
-			base_power: 12,
+			base_power: 1200,
 			base_heat: 36
 		},
 		{
