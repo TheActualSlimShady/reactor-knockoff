@@ -13,13 +13,13 @@ window.parts = function() {
 			cell_count: 1,
 			pulse_multiplier: 1,
 			base_cost: 10,
-			base_ticks: 15,
+			base_ticks: 20,
 			base_power: 1,
 			base_heat: 1,
 			cell_tick_upgrade_cost: 100,
-			cell_tick_upgrade_multiplier: 10,
+			cell_tick_upgrade_multiplier: 8,
 			cell_power_upgrade_cost: 500,
-			cell_power_upgrade_multiplier: 10,
+			cell_power_upgrade_multiplier: 8,
 			cell_perpetual_upgrade_cost: 1000
 		},
 		{
@@ -32,7 +32,7 @@ window.parts = function() {
 			cell_count: 2,
 			pulse_multiplier: 1,
 			base_cost: 25,
-			base_ticks: 15,
+			base_ticks: 20,
 			base_power: 4,
 			base_heat: 8
 		},
@@ -57,15 +57,15 @@ window.parts = function() {
 			title: 'Plutonium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
-			base_cost: 6000,
-			base_ticks: 60,
-			base_power: 150,
-			base_heat: 150,
-			cell_tick_upgrade_cost: 30000,
-			cell_tick_upgrade_multiplier: 10,
-			cell_power_upgrade_cost: 30000,
-			cell_power_upgrade_multiplier: 10,
-			cell_perpetual_upgrade_cost: 60000
+			base_cost: 1600,
+			base_ticks: 150,
+			base_power: 16,
+			base_heat: 16,
+			cell_tick_upgrade_cost: 16000,
+			cell_tick_upgrade_multiplier: 8,
+			cell_power_upgrade_cost: 80000,
+			cell_power_upgrade_multiplier: 8,
+			cell_perpetual_upgrade_cost: 160000
 		},
 		{
 			id: 'thorium',
@@ -74,15 +74,15 @@ window.parts = function() {
 			title: 'Thorium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
-			base_cost: 4700000,
-			base_ticks: 900,
-			base_power: 7400,
-			base_heat: 7400,
-			cell_tick_upgrade_cost: 25000000,
-			cell_tick_upgrade_multiplier: 10,
-			cell_power_upgrade_cost: 25000000,
-			cell_power_upgrade_multiplier: 10,
-			cell_perpetual_upgrade_cost: 50000000
+			base_cost: 256000,
+			base_ticks: 1500,
+			base_power: 256,
+			base_heat: 256,
+			cell_tick_upgrade_cost: 2560000,
+			cell_tick_upgrade_multiplier: 8,
+			cell_power_upgrade_cost: 12800000,
+			cell_power_upgrade_multiplier: 8,
+			cell_perpetual_upgrade_cost: 25600000
 		},
 		{
 			id: 'seaborgium',
@@ -91,15 +91,15 @@ window.parts = function() {
 			title: 'Seaborgium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
-			base_cost: 4000000000,
-			base_ticks: 3600,
-			base_power: 1600000,
-			base_heat: 1600000,
-			cell_tick_upgrade_cost: 20000000000,
-			cell_tick_upgrade_multiplier: 10,
-			cell_power_upgrade_cost: 20000000000,
-			cell_power_upgrade_multiplier: 10,
-			cell_perpetual_upgrade_cost: 40000000000
+			base_cost: 40960000,
+			base_ticks: 15000,
+			base_power: 4096,
+			base_heat: 4096,
+			cell_tick_upgrade_cost: 409600000,
+			cell_tick_upgrade_multiplier: 8,
+			cell_power_upgrade_cost: 2048000000,
+			cell_power_upgrade_multiplier: 8,
+			cell_perpetual_upgrade_cost: 4096000000
 		},
 		{
 			id: 'dolorium',
@@ -108,15 +108,15 @@ window.parts = function() {
 			title: 'Dolorium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
-			base_cost: 3900000000000,
-			base_ticks: 22000,
-			base_power: 230000000,
-			base_heat: 230000000,
-			cell_tick_upgrade_cost: 20000000000000,
-			cell_tick_upgrade_multiplier: 10,
-			cell_power_upgrade_cost: 20000000000000,
-			cell_power_upgrade_multiplier: 10,
-			cell_perpetual_upgrade_cost: 40000000000000
+			base_cost: 6553600000,
+			base_ticks: 150000,
+			base_power: 65536,
+			base_heat: 65536,
+			cell_tick_upgrade_cost: 65536000000,
+			cell_tick_upgrade_multiplier: 8,
+			cell_power_upgrade_cost: 327680000000,
+			cell_power_upgrade_multiplier: 8,
+			cell_perpetual_upgrade_cost: 655360000000
 		},
 		{
 			id: 'nefastium',
@@ -125,15 +125,15 @@ window.parts = function() {
 			title: 'Nefastium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
-			base_cost: 3600000000000000,
-			base_ticks: 86000,
-			base_power: 52000000000,
-			base_heat: 52000000000,
-			cell_tick_upgrade_cost: 17500000000000000,
-			cell_tick_upgrade_multiplier: 10,
-			cell_power_upgrade_cost: 17500000000000000,
-			cell_power_upgrade_multiplier: 10,
-			cell_perpetual_upgrade_cost: 35000000000000000
+			base_cost: 1048576000000,
+			base_ticks: 1500000,
+			base_power: 1048576,
+			base_heat: 1048576,
+			cell_tick_upgrade_cost: 10485760000000,
+			cell_tick_upgrade_multiplier: 8,
+			cell_power_upgrade_cost: 52428800000000,
+			cell_power_upgrade_multiplier: 8,
+			cell_perpetual_upgrade_cost: 104857600000000
 		},
 		{
 			id: 'protium',
@@ -144,10 +144,10 @@ window.parts = function() {
 			category: 'cell',
 			experimental: true,
 			erequires: 'protium_cells',
-			base_cost: 3000000000000000,
-			base_ticks: 3600,
-			base_power: 1250000000000,
-			base_heat: 1250000000000
+			base_cost: 167772160000000,
+			base_ticks: 15000000,
+			base_power: 16777216,
+			base_heat: 16777216
 		},
 
 		// Energy
@@ -159,12 +159,12 @@ window.parts = function() {
 			levels: 5,
 			category: 'reflector',
 			level: 1,
-			base_cost: 500,
-			cost_multiplier: 50,
+			base_cost: 50,
+			cost_multiplier: 16,
 			base_power_increase: 5,
 			power_increase_add: 1,
-			base_ticks: 100,
-			ticks_multiplier: 2
+			base_ticks: 60,
+			ticks_multiplier: 16
 		},
 		{
 			id: 'reflector6',
@@ -175,10 +175,10 @@ window.parts = function() {
 			experimental: true,
 			erequires: 'heat_reflection',
 			level: 6,
-			base_cost: 100000000000000,
+			base_cost: 5242800,
 			base_power_increase: 5,
-			base_heat_increase: 50,
-			base_ticks: 3200
+			base_heat_increase: 100,
+			base_ticks: 6214560
 		},
 		{
 			id: 'capacitor',
@@ -188,12 +188,12 @@ window.parts = function() {
 			levels: 5,
 			category: 'capacitor',
 			level: 1,
-			base_cost: 1000,
-			cost_multiplier: 160,
+			base_cost: 500,
+			cost_multiplier: 32,
 			base_reactor_power: 100,
-			reactor_power_multiplier: 140,
+			reactor_power_multiplier: 16,
 			base_containment: 10,
-			containment_multiplier: 5
+			containment_multiplier: 8
 		},
 		{
 			id: 'capacitor6',
@@ -204,9 +204,9 @@ window.parts = function() {
 			experimental: true,
 			erequires: 'experimental_capacitance',
 			level: 6,
-			base_cost: 105000000000000,
-			base_reactor_power: 2100000000000000,
-			base_containment: 5400000000000
+			base_cost: 16777216000,
+			base_reactor_power: 104857600,
+			base_containment: 32768000
 		},
 
 		// Heat
@@ -219,11 +219,11 @@ window.parts = function() {
 			category: 'vent',
 			level: 1,
 			base_cost: 50,
-			cost_multiplier: 250,
-			base_containment: 80,
-			containment_multiplier: 75,
+			cost_multiplier: 16,
+			base_containment: 128,
+			containment_multiplier: 4,
 			base_vent: 4,
-			vent_multiplier: 75,
+			vent_multiplier: 4,
 			location: 'cooling'
 		},
 		{
@@ -235,9 +235,9 @@ window.parts = function() {
 			experimental: true,
 			erequires: 'vortex_cooling',
 			level: 6,
-			base_cost: 50000000000000,
-			base_containment: 100000000000,
-			base_vent: 5000000000,
+			base_cost: 52428800,
+			base_containment: 131072,
+			base_vent: 4096,
 		},
 		{
 			id: 'heat_exchanger',
@@ -247,12 +247,12 @@ window.parts = function() {
 			levels: 5,
 			category: 'heat_exchanger',
 			level: 1,
-			base_cost: 160,
-			cost_multiplier: 200,
-			base_containment: 320,
-			containment_multiplier: 75,
+			base_cost: 200,
+			cost_multiplier: 16,
+			base_containment: 512,
+			containment_multiplier: 4,
 			base_transfer: 16,
-			transfer_multiplier: 75,
+			transfer_multiplier: 4,
 			location: 'cooling'
 		},
 		{
@@ -264,9 +264,9 @@ window.parts = function() {
 			experimental: true,
 			erequires: 'underground_heat_extraction',
 			level: 6,
-			base_cost: 50000000000000,
-			base_containment: 1000000000000,
-			base_transfer: 20000000000,
+			base_cost: 209715200,
+			base_containment: 524288,
+			base_transfer: 16384,
 		},
 		{
 			id: 'heat_inlet',
@@ -276,10 +276,10 @@ window.parts = function() {
 			levels: 5,
 			category: 'heat_inlet',
 			level: 1,
-			base_cost: 160,
-			cost_multiplier: 200,
+			base_cost: 200,
+			cost_multiplier: 16,
 			base_transfer: 16,
-			transfer_multiplier: 75,
+			transfer_multiplier: 4,
 			location: 'cooling'
 		},
 		{
@@ -292,8 +292,8 @@ window.parts = function() {
 			erequires: 'vortex_extraction',
 			base_range: 2,
 			level: 6,
-			base_cost: 50000000000000,
-			base_transfer: 20000000000
+			base_cost: 209715200,
+			base_transfer: 16384,
 		},
 		{
 			id: 'heat_outlet',
@@ -303,10 +303,10 @@ window.parts = function() {
 			levels: 5,
 			category: 'heat_outlet',
 			level: 1,
-			base_cost: 160,
-			cost_multiplier: 200,
+			base_cost: 200,
+			cost_multiplier: 16,
 			base_transfer: 16,
-			transfer_multiplier: 75,
+			transfer_multiplier: 4,
 			location: 'cooling'
 		},
 		{
@@ -319,8 +319,8 @@ window.parts = function() {
 			erequires: 'explosive_ejection',
 			base_range: 2,
 			level: 6,
-			base_cost: 50000000000000,
-			base_transfer: 20000000000
+			base_cost: 209715200,
+			base_transfer: 16384,
 		},
 		{
 			id: 'coolant_cell',
@@ -331,9 +331,9 @@ window.parts = function() {
 			category: 'coolant_cell',
 			level: 1,
 			base_cost: 500,
-			cost_multiplier: 200,
+			cost_multiplier: 16,
 			base_containment: 2000,
-			containment_multiplier: 180,
+			containment_multiplier: 16,
 			location: 'cooling'
 		},
 		{
@@ -345,8 +345,8 @@ window.parts = function() {
 			experimental: true,
 			erequires: 'thermionic_conversion',
 			level: 6,
-			base_cost: 160000000000000,
-			base_containment: 380000000000000
+			base_cost: 524288000,
+			base_containment: 2097152000
 		},
 		{
 			id: 'reactor_plating',
@@ -356,10 +356,10 @@ window.parts = function() {
 			levels: 5,
 			category: 'reactor_plating',
 			level: 1,
-			base_cost: 1000,
-			cost_multiplier: 160,
+			base_cost: 200,
+			cost_multiplier: 16,
 			base_reactor_heat: 100,
-			reactor_heat_multiplier: 140,
+			reactor_heat_multiplier: 8,
 			location: 'cooling'
 		},
 		{
@@ -371,8 +371,8 @@ window.parts = function() {
 			experimental: true,
 			erequires: 'micro_capacitance',
 			level: 6,
-			base_cost: 100000000000000,
-			base_reactor_heat: 8000000000000
+			base_cost: 209715200,
+			base_reactor_heat: 3276800
 		},
 		{
 			id: 'particle_accelerator',
@@ -382,8 +382,8 @@ window.parts = function() {
 			levels: 5,
 			category: 'particle_accelerator',
 			level: 1,
-			base_cost: 1000000000000,
-			cost_multiplier: 10000,
+			base_cost: 1000000,
+			cost_multiplier: 1000,
 			base_containment: 100,
 			containment_multiplier: 1000000,
 			base_ep_heat: 500000000,
