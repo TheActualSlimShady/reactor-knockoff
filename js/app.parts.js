@@ -14,7 +14,7 @@ window.parts = function() {
 			pulse_multiplier: 1,
 			base_cost: 10,
 			base_ticks: 15,
-			base_power: 1,
+			base_power: 100,
 			base_heat: 1,
 			cell_tick_upgrade_cost: 100,
 			cell_tick_upgrade_multiplier: 10,
