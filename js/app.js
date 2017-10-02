@@ -72,17 +72,17 @@ var Game = function() {
 
 	// settings
 	this.version = '1.2.0';
-	this.base_cols = 14;
-	this.base_rows = 11;
-	this.max_cols = 35;
-	this.max_rows = 32;
+	this.base_cols = 10;
+	this.base_rows = 10;
+	this.max_cols = 31;
+	this.max_rows = 31;
 	this.debug = false;
 	this.save_debug = false;
 	this.base_loop_wait = 1000;
 	this.base_power_multiplier = 1;
 	this.base_heat_multiplier = 4;
 	this.base_manual_heat_reduce = 1;
-	this.upgrade_max_level = 32;
+	this.upgrade_max_level = 31;
 	this.base_max_heat = 1000;
 	this.base_max_power = 100;
 	this.base_money = 10;
