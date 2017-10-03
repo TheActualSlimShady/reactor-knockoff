@@ -299,19 +299,19 @@ window.upgrades = function(game) {
 			onclick: function(upgrade) {
 				game.rows = game.base_rows + upgrade.level;
 			}
-		},
+		},*/
 		{
 			id: 'expand_reactor_cols',
 			type: 'other',
-			title: 'Expand Reactor Cols',
-			description: 'Add one column to the reactor for each level of the upgrade.',
-			cost: 100,
-			levels: 53,
+			title: 'DOES NOTHING',
+			description: 'DOES NOTHING',
+			cost: 1000000000000000000,
+			levels: 1,
 			multiplier: 50,
 			onclick: function(upgrade) {
-				game.cols = game.base_cols + upgrade.level;
+				console.log("Told ya");
 			}
-		},*/
+		},
 		{
 			id: 'expand_reactor_rows', //need to figure out saving/loading before id is changed
 			type: 'other',
