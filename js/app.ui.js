@@ -248,7 +248,7 @@ var update_interface = function() {
 		}
 	}
 
-	window.check_affordability();
+	window.check_affordability;
 
 	for ( var i = 0, l = ui.game.part_objects_array.length, part; i < l; i++ ) {
 		part = ui.game.part_objects_array[i];
