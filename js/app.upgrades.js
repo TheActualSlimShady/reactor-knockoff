@@ -288,7 +288,7 @@ window.upgrades = function(game) {
 		},*/
 
 		// Expanding
-		{
+		/*{
 			id: 'expand_reactor_rows',
 			type: 'other',
 			title: 'Expand Reactor Rows',
@@ -311,7 +311,19 @@ window.upgrades = function(game) {
 			onclick: function(upgrade) {
 				game.cols = game.base_cols + upgrade.level;
 			}
-		},
+		},*/
+		{
+			id: 'expand_reactor_rows', //need to figure out saving/loading before id is changed
+			type: 'other',
+			title: 'Expand Reactor',
+			desription: 'Add one row and one column to the reactor for each level of the upgrade.',
+			cost: 100,
+			levels: 53,
+			multiplier: 50,
+			onclick: function(upgrade) {
+				game.cols = game.base_cols + upgrade.level;
+				game.rows = game.base_rows + upgrade.level;
+			}
 
 		  /////////////////////////////
 		 // Experimental Upgrades
