@@ -232,7 +232,7 @@ var update_interface = function() {
 	}
 
 	if ( do_check_upgrades_affordability === true ) {
-		window.check_upgrades_affordability();
+		window.check_upgrades_affordability;
 		for ( var i = 0, l = ui.game.upgrade_objects_array.length, upgrade; i < l; i++ ) {
 			upgrade = ui.game.upgrade_objects_array[i];
 
