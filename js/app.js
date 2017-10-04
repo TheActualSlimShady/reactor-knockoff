@@ -1557,7 +1557,7 @@ var upgrade_tooltip_hide = function(e) {
 	$main.className = $main.className.replace(tooltip_showing_replace, '');
 };
 
-if ( !is_ios ) {
+/*if ( !is_ios ) {
 	$all_upgrades.delegate('upgrade', 'mouseover', upgrade_tooltip_show);
 	$all_upgrades.delegate('upgrade', 'mouseout', upgrade_tooltip_hide);
 }
@@ -1565,8 +1565,12 @@ if ( !is_ios ) {
 if ( is_touch ) {
 	$all_upgrades.delegate('upgrade', 'focus', upgrade_tooltip_show);
 	$all_upgrades.delegate('upgrade', 'blur', upgrade_tooltip_hide);
-}
+}*/
 
+	$all_upgrades.delegate('upgrade', 'mouseover', upgrade_tooltip_show);
+	$all_upgrades.delegate('upgrade', 'mouseout', upgrade_tooltip_hide);
+	$all_upgrades.delegate('upgrade', 'focus', upgrade_tooltip_show);
+	$all_upgrades.delegate('upgrade', 'blur', upgrade_tooltip_hide);
 // More stuff I guess
 
 var upgrade_locations = {
