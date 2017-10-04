@@ -323,8 +323,8 @@ window.upgrades = function(game) {
 			onclick: function(upgrade) {
 				game.cols = game.base_cols + upgrade.level;
 				game.rows = game.base_rows + upgrade.level;
-			},
-
+			}
+		},
 		  /////////////////////////////
 		 // Experimental Upgrades
 		/////////////////////////////
