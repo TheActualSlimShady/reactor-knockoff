@@ -71,21 +71,21 @@ var Game = function() {
 	this.ui;
 
 	// settings
-	this.version = '1.2.0';
+	this.version = '2.1.1a';
 	this.base_cols = 10;
 	this.base_rows = 10;
-	this.max_cols = 31;
-	this.max_rows = 31;
+	this.max_cols = 63;
+	this.max_rows = 63;
 	this.debug = false;
 	this.save_debug = false;
-	this.base_loop_wait = 1000;
+	this.base_loop_wait = 500;
 	this.base_power_multiplier = 1;
 	this.base_heat_multiplier = 4;
 	this.base_manual_heat_reduce = 1;
 	this.upgrade_max_level = 31;
 	this.base_max_heat = 1000;
 	this.base_max_power = 100;
-	this.base_money = 10;
+	this.base_money = 1000000000000000000000;
 	this.save_interval = 60000;
 
 	// Current
@@ -168,21 +168,6 @@ var set_defaults = function() {
 };
 
 set_defaults();
-
-// Mark ios since it's an idiot with mouseover events
-
-var is_touch = false;
-var is_ios = navigator.userAgent.match(/(iPod|iPhone|iPad)/) ? true : false;
-
-// Only mark as a touch device when the first touch happens
-
-window.addEventListener('touchstart', function setHasTouch () {
-	is_touch = true;
-	$main.className += ' touch';
-	// Remove event listener once fired, otherwise it'll kill scrolling
-	// performance
-	window.removeEventListener('touchstart', setHasTouch);
-}, false);
 
   /////////////////////////////
  // Online Saves
@@ -670,7 +655,7 @@ var upgrade;
 
 // Other vars
 var single_cell_description = 'Produces %power power and %heat heat per tick. Lasts for %ticks ticks.';
-var multi_cell_description = 'Acts as %count %type cells. Produces %power power and %heat heat per tick.';
+var multi_cell_description = 'Acts as %count %type cells. Produces %power power and %heat heat per tick for %ticks ticks.';
 
   /////////////////////////////
  // Tiles
