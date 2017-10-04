@@ -1097,16 +1097,6 @@ var tile_tooltip_hide = function(e) {
 	tooltip_tile = null;
 	$main.className = $main.className.replace(tooltip_showing_replace, '');
 };
-//Throws an error
-/*if ( !is_ios ) {
-	$reactor.delegate('tile', 'mouseover', tile_tooltip_show);
-	$reactor.delegate('tile', 'mouseout', tile_tooltip_hide);
-}*/
-
-if ( !is_touch ) {
-	$reactor.delegate('tile', 'focus', tile_tooltip_show);
-	$reactor.delegate('tile', 'blur', tile_tooltip_hide);
-}
 
   /////////////////////////////
  // Parts
