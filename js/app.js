@@ -1446,10 +1446,12 @@ var part_tooltip_hide = function(e) {
 
 };
 
-if ( !is_ios ) {
+/*if ( !is_ios ) {
 	$all_parts.delegate('part', 'mouseover', part_tooltip_show);
 	$all_parts.delegate('part', 'mouseout', part_tooltip_hide);
-}
+}*/
+	$all_parts.delegate('part', 'mouseover', part_tooltip_show);
+	$all_parts.delegate('part', 'mouseout', part_tooltip_hide);
 
 if ( !is_touch ) {
 	$all_parts.delegate('part', 'focus', part_tooltip_show);
