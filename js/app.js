@@ -1508,7 +1508,7 @@ game.epart_onclick = function(upgrade) {
 	}
 };
 
-var upgrades = window.upgrade(game);
+var upgrades = window.upgrades(game);
 window.upgrades = null;
 
 // Upgrade tooltips
