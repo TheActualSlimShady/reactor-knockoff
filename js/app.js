@@ -78,14 +78,14 @@ var Game = function() {
 	this.max_rows = 63;
 	this.debug = false;
 	this.save_debug = false;
-	this.base_loop_wait = 500;
+	this.base_loop_wait = 100;
 	this.base_power_multiplier = 1;
 	this.base_heat_multiplier = 4;
 	this.base_manual_heat_reduce = 1;
 	this.upgrade_max_level = 31;
 	this.base_max_heat = 1000;
 	this.base_max_power = 100;
-	this.base_money = 10000000000000;
+	this.base_money = 10;
 	this.save_interval = 60000;
 
 	// Current
