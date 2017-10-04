@@ -1695,11 +1695,11 @@ for ( var i = 0, l = game.upgrade_objects_array.length; i < l; i++ ) {
 $all_upgrades.delegate('upgrade', 'click', function(event) {
 	var upgrade = this.upgrade;
 
-	if ( is_touch && !upgrade.clicked ) {
+	/*if ( is_touch && !upgrade.clicked ) {
 		upgrade_tooltip_show.apply(this, event);
 		upgrade.clicked = true;
 		return;
-	}
+	}*/
 
 	if ( upgrade.level >= upgrade.upgrade.levels ) {
 		return;
