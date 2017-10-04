@@ -1523,7 +1523,7 @@ game.epart_onclick = function(upgrade) {
 	}
 };
 
-var upgrades = window.upgrade;
+var upgrades = window.upgrades;
 window.upgrades = null;
 
 // Upgrade tooltips
