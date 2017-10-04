@@ -1068,13 +1068,13 @@ var tile_tooltip_show = function(e) {
 		$main.className += ' tooltip_showing';
 	}
 
-	if ( is_touch ) {
+	//if ( is_touch ) {
 		if ( tooltip_tile ) {
 			tooltip_tile.$el.className = tooltip_tile.$el.className.replace(tile_active_find, '');
 		}
 
 		tile.$el.className += ' tile_active';
-	}
+	//}
 
 	part.showTooltip(tile);
 	tooltip_showing = true;
@@ -1891,9 +1891,9 @@ $all_parts.delegate('part', 'click', function(e) {
 		$main.className = $main.className.replace(active_replace, '');
 		part_tooltip_hide();
 
-		if ( is_touch ) {
+		/*if ( is_touch ) {
 			document.body.scrollTop = 0;
-		}
+		}*/
 	} else {
 		part_tooltip_show.apply(this, e);
 
