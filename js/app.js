@@ -55,7 +55,6 @@ save layouts
 
 console.log
 */
-var is_touch = false;
 
 ;(function() {
 'use strict';
@@ -1068,14 +1067,6 @@ var tile_tooltip_show = function(e) {
 		$main.className += ' tooltip_showing';
 	}
 
-	//if ( is_touch ) {
-		if ( tooltip_tile ) {
-			tooltip_tile.$el.className = tooltip_tile.$el.className.replace(tile_active_find, '');
-		}
-
-		tile.$el.className += ' tile_active';
-	//}
-
 	part.showTooltip(tile);
 	tooltip_showing = true;
 
@@ -1088,10 +1079,6 @@ var tile_tooltip_show = function(e) {
 };
 
 var tile_tooltip_hide = function(e) {
-	if ( is_touch && tooltip_tile ) {
-		tooltip_tile.$el.className = tooltip_tile.$el.className.replace(tile_active_find, '');
-	}
-
 	tooltip_showing = false;
 	tooltip_update = null;
 	tooltip_tile = null;
@@ -1453,10 +1440,6 @@ var part_tooltip_hide = function(e) {
 	$all_parts.delegate('part', 'mouseover', part_tooltip_show);
 	$all_parts.delegate('part', 'mouseout', part_tooltip_hide);
 
-/*if ( !is_touch ) {
-	$all_parts.delegate('part', 'focus', part_tooltip_show);
-	$all_parts.delegate('part', 'blur', part_tooltip_hide);
-}*/
 	$all_parts.delegate('part', 'focus', part_tooltip_show);
 	$all_parts.delegate('part', 'blur', part_tooltip_hide);
 
@@ -1556,17 +1539,6 @@ var upgrade_tooltip_hide = function(e) {
 	//tooltip_update = null;
 	$main.className = $main.className.replace(tooltip_showing_replace, '');
 };
-
-/*if ( !is_ios ) {
-	$all_upgrades.delegate('upgrade', 'mouseover', upgrade_tooltip_show);
-	$all_upgrades.delegate('upgrade', 'mouseout', upgrade_tooltip_hide);
-}
-
-if ( is_touch ) {
-	$all_upgrades.delegate('upgrade', 'focus', upgrade_tooltip_show);
-	$all_upgrades.delegate('upgrade', 'blur', upgrade_tooltip_hide);
-}*/
-
 	$all_upgrades.delegate('upgrade', 'mouseover', upgrade_tooltip_show);
 	$all_upgrades.delegate('upgrade', 'mouseout', upgrade_tooltip_hide);
 	$all_upgrades.delegate('upgrade', 'focus', upgrade_tooltip_show);
@@ -1694,12 +1666,6 @@ for ( var i = 0, l = game.upgrade_objects_array.length; i < l; i++ ) {
 // Upgrade delegate event
 $all_upgrades.delegate('upgrade', 'click', function(event) {
 	var upgrade = this.upgrade;
-
-	/*if ( is_touch && !upgrade.clicked ) {
-		upgrade_tooltip_show.apply(this, event);
-		upgrade.clicked = true;
-		return;
-	}*/
 
 	if ( upgrade.level >= upgrade.upgrade.levels ) {
 		return;
@@ -1890,10 +1856,7 @@ $all_parts.delegate('part', 'click', function(e) {
 		this.className = this.className.replace(active_replace, '');
 		$main.className = $main.className.replace(active_replace, '');
 		part_tooltip_hide();
-
-		/*if ( is_touch ) {
-			document.body.scrollTop = 0;
-		}*/
+		
 	} else {
 		part_tooltip_show.apply(this, e);
 
