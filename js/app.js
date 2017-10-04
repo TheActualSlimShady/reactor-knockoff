@@ -55,7 +55,7 @@ save layouts
 
 console.log
 */
-
+var is_touch = false;
 
 ;(function() {
 'use strict';
