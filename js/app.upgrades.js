@@ -300,7 +300,7 @@ window.upgrades = function(game) {
 				game.rows = game.base_rows + upgrade.level;
 			}
 		},*/
-		{
+		/*{
 			id: 'expand_reactor_cols',
 			type: 'other',
 			title: 'DOES NOTHING',
@@ -311,7 +311,7 @@ window.upgrades = function(game) {
 			onclick: function(upgrade) {
 				console.log("Told ya");
 			}
-		},
+		},*/
 		{
 			id: 'expand_reactor_rows', //need to figure out saving/loading before id is changed
 			type: 'other',
