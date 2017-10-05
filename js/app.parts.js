@@ -51,23 +51,9 @@ window.parts = function() {
 			base_heat: 36
 		},
 		{
-			id: 'uranium4',
-			type: 'uranium',
-			level: 4,
-			title: 'Octal Uranium Cell',
-			base_description: '%multi_cell_description',
-			category: 'cell',
-			cell_count: 8,
-			pulse_multiplier: 1,
-			base_cost: 60,
-			base_ticks: 15,
-			base_power: 28,
-			base_heat: 100
-		},
-		{
 			id: 'plutonium',
 			type: 'plutonium',
-			levels: 4,
+			levels: 3,
 			title: 'Plutonium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
@@ -84,7 +70,7 @@ window.parts = function() {
 		{
 			id: 'thorium',
 			type: 'thorium',
-			levels: 4,
+			levels: 3,
 			title: 'Thorium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
@@ -101,7 +87,7 @@ window.parts = function() {
 		{
 			id: 'seaborgium',
 			type: 'seaborgium',
-			levels: 4,
+			levels: 3,
 			title: 'Seaborgium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
@@ -118,7 +104,7 @@ window.parts = function() {
 		{
 			id: 'dolorium',
 			type: 'dolorium',
-			levels: 4,
+			levels: 3,
 			title: 'Dolorium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
@@ -135,7 +121,7 @@ window.parts = function() {
 		{
 			id: 'nefastium',
 			type: 'nefastium',
-			levels: 4,
+			levels: 3,
 			title: 'Nefastium Cell',
 			base_description: '%single_cell_description',
 			category: 'cell',
@@ -152,7 +138,7 @@ window.parts = function() {
 		{
 			id: 'protium',
 			type: 'protium',
-			levels: 4,
+			levels: 3,
 			title: 'Protium Cell',
 			base_description: '%single_cell_description' + ' After being fully depleted, protium cells permanently generate 10% more power per depleted cell.',
 			category: 'cell',
