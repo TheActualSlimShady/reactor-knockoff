@@ -267,7 +267,7 @@ window.objectives = function(game) {
 			title: 'Expand your reactor 4 times in either direction',
 			reward: 100000000,
 			check: function() {
-				return game.upgrade_objects['expand_reactor_rows'].level >= 4 || game.upgrade_objects['expand_reactor_cols'].level >= 4;
+				return game.upgrade_objects['expand_reactor_rows'].level >= 4;
 			}
 		},
 		{
