@@ -382,12 +382,12 @@ window.parts = function() {
 			levels: 5,
 			category: 'particle_accelerator',
 			level: 1,
-			base_cost: 1000000,
-			cost_multiplier: 1000,
-			base_containment: 100,
-			containment_multiplier: 1000000,
-			base_ep_heat: 500000000,
-			ep_heat_multiplier: 20000,
+			base_cost: 1024000,
+			cost_multiplier: 512,
+			base_containment: 1024,
+			containment_multiplier: 1024,
+			base_ep_heat: 589824,
+			ep_heat_multiplier: 1024,
 			location: 'cooling'
 		},
 		{
@@ -399,9 +399,9 @@ window.parts = function() {
 			experimental: true,
 			erequires: '',
 			level: 6,
-			base_cost: 100000000000000,
-			base_containment: 100000000000000000000000000000000,
-			base_ep_heat: 1600000000000000000000000000000
+			base_cost: 36028797018963968,
+			base_containment: 1152921504606846976,
+			base_ep_heat: 21250649172913403461632
 		}
 	];
 };
