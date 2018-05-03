@@ -81,14 +81,14 @@ window.upgrades = function(game) {
 			id: 'improved_wiring',
 			type: 'other',
 			title: 'Improved Wiring',
-			description: 'Capacitors hold twice as much power and heat per level of upgrade.',
+			description: 'Capacitors are 100% more effective and hold twice as much heat per level of upgrade.',
 			cost: 5000,
 			multiplier: 5,
 			onclick: function(upgrade) {
 				var part;
 				for ( var i = 1; i <= 6; i++ ) {
 					part = game.part_objects['capacitor' + i];
-					part.reactor_power = part.part.base_reactor_power * Math.pow(2, upgrade.level) * Math.pow(2, game.upgrade_objects['quantum_buffering'].level);
+					part.reactor_power = part.part.base_reactor_power * (upgrade.level + 1) * (game.upgrade_objects['quantum_buffering'].level + 1);
 					part.containment = part.part.base_containment * Math.pow(2, upgrade.level) * Math.pow(2, game.upgrade_objects['quantum_buffering'].level);
 					part.updateDescription();
 				}
