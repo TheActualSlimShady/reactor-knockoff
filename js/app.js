@@ -946,15 +946,15 @@ var update_tiles = function() {
 			tile_part = tile.part;
 
 			if ( tile_part && tile.activated && tile_part.reactor_power ) {
-				max_power += tile_part.reactor_power;
+				max_power *= ((100 + tile_part.reactor_power) / 100);
 			}
 
 			if ( tile_part && tile.activated && tile_part.reactor_heat ) {
-				max_heat += tile_part.reactor_heat;
+				max_heat *= ((100 + tile_part.reactor_heat) / 100);
 			}
 
 			if ( tile_part && tile_part.id === 'reactor_plating6' ) {
-				max_power += tile_part.reactor_heat;
+				max_power *= ((100 + tile_part.reactor_heat) / 100);
 			}
 		}
 	}
