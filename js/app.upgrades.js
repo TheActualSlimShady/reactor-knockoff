@@ -52,7 +52,7 @@ window.upgrades = function(game) {
 			id: 'improved_alloys',
 			type: 'other',
 			title: 'Improved Alloys',
-			description: 'Plating holds twice as much heat per level of upgrade.',
+			description: 'Plating is twiceas effective per level of upgrade.',
 			cost: 5000,
 			multiplier: 5,
 			onclick: function(upgrade) {
@@ -397,7 +397,29 @@ window.upgrades = function(game) {
 			id: 'fluid_hyperdynamics',
 			type: 'experimental_boost',
 			title: 'Fluid Hyperdynamics',
-			description: 'Heat vents, exchangers, inlets and outlets are two times as effective per level of upgrade.',
+			description: 'Heat vents are twice as effective and hold twice as much heat per level of upgrade.',
+			erequires: 'laboratory1',
+			ecost: 50,
+			multiplier: 4,
+			onclick: function(upgrade) {
+				var part;
+
+				for ( var i = 1; i <= 6; i++ ) {
+					part = game.part_objects['vent' + i];
+					part.vent = part.part.base_vent * Math.pow(2, game.upgrade_objects['improved_heat_vents'].level) * Math.pow(2, upgrade.level);
+					part.updateDescription();
+					
+					part = game.part_objects['vent' + i];
+					part.containment = part.part.base_containment * Math.pow(2, game.upgrade_objects['improved_heat_vents'].level) * Math.pow(2, upgrade.level);
+					part.updateDescription();
+				}
+			}
+		},
+		{
+			id: 'fractal_piping',
+			type: 'experimental_boost',
+			title: 'Fractal Piping',
+			description: 'Heat exchangers hold two times their base heat and inlets, outlests, and exchangers are twice as effective per level of upgrade.',
 			erequires: 'laboratory1',
 			ecost: 50,
 			multiplier: 4,
@@ -415,28 +437,6 @@ window.upgrades = function(game) {
 
 					part = game.part_objects['heat_exchanger' + i];
 					part.transfer = part.part.base_transfer * Math.pow(2, game.upgrade_objects['improved_heat_exchangers'].level) * Math.pow(2, upgrade.level);
-					part.updateDescription();
-
-					part = game.part_objects['vent' + i];
-					part.vent = part.part.base_vent * Math.pow(2, game.upgrade_objects['improved_heat_vents'].level) * Math.pow(2, upgrade.level);
-					part.updateDescription();
-				}
-			}
-		},
-		{
-			id: 'fractal_piping',
-			type: 'experimental_boost',
-			title: 'Fractal Piping',
-			description: 'Heat vents and exchangers hold two times their base heat per level of upgrade.',
-			erequires: 'laboratory1',
-			ecost: 50,
-			multiplier: 4,
-			onclick: function(upgrade) {
-				var part;
-
-				for ( var i = 1; i <= 6; i++ ) {
-					part = game.part_objects['vent' + i];
-					part.containment = part.part.base_containment * Math.pow(2, game.upgrade_objects['improved_heat_vents'].level) * Math.pow(2, upgrade.level);
 					part.updateDescription();
 
 					part = game.part_objects['heat_exchanger' + i];
